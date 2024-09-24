@@ -1,0 +1,167 @@
+
+/* */
+
+*{
+     margin: 0;  /* Altera a margem */
+    padding: 0;  /* Altera o pading*/
+    box-sizing: border-box; /* Altera a forma de organização da caixa dos elementos*/
+}
+
+body{
+    font-family: Arial, sans-serif; /* Coloca todo o texto do body com a fonte Arial */ 
+    line-height: 1.6; /* Aumenta altura da linha de texto */
+    background-color: #f9f9f9; /* Altera a cor do fundo de todo o body*/
+}
+
+nav{
+    position: fixed; /* Fixa a posição dos elementos do nav na tela indenpendentemente de rolar a pag */ 
+    top: 0;  /* Altera a distancia que a barra de navegação vai ficar do topo da tela */
+    width: 100%;  /* Coloca a largura em 100% pra centralizar os elementos no centro */
+    background-color: #6667578c; /* Altera a cor de todo o fundo da barra de navegação */
+    padding: 20px 0; /* Adicona um padding de 20 pixels verticalmente a barra  */
+}
+
+nav ul{
+    list-style-type: none; /* Altera o estilo da lista do navegador para nenhum*/
+    display: flex; /* Coloca os itens dentro do (nav) em modo flex pra lidar com varios tamanhos de tela */
+    justify-content: center; /* Coloca o conteudo dentro do (nav) centralizado, precisa do display como flex para funcionar */
+    
+}
+
+nav ul li{
+    margin: 0 30px; /* Zera a margem a esquerda e coloca uma margem de 30 pixels top para as tags nav, ul e li */
+}
+
+nav ul li a{
+color: white; /* Altera a cor dos links de navegação para a cor branca */
+text-decoration: none; /* Retira a indicação de link do texto */
+font-size: 18px; /* Aumenta o tamanho da fonte */
+padding: 10px; /* Alterou o padding horizontalmente da tag (a) */
+transition: color 0.3s; /* ? */
+}
+
+nav ul li a:hover{
+    color: #00fffb; /* Colocou um efeito de "sombreamento" quando o mouse interagir com o link de navegação */
+}
+
+section:not(#home){
+    padding: 100px 20px; /* Alterou o padding de todos as (sections) como exeção do home */
+    text-align: center; /* Alinhou todo o texto pro centro */
+    display: flex; /* Colocou os itens em modo flex para lidar com varios tamanhos de telas diferentes */
+    justify-content: center ; /* Centralizou o conteudo da imagem com texto */
+    align-items: center; /* Alinhou no centro todos os itens da seção na ramo vertical */
+    height: 100vh; /* Almentou a altura dos elementos dentro da seção pra ficarem com 100% do viewport */
+}
+
+#home{
+    /* background-color: #4A90E2; */
+    background-image: url(https://images.pexels.com/photos/2804929/pexels-photo-2804929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+    background-size: cover; /* Altera pro background cobrir toda a área do home */
+    background-repeat: no-repeat; /* Impede que a imagem do background não se repita */
+    color: #ffffff;
+    height: 100vh; /* Aumenta a altura da área do home */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex pra uma coluna */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-shadow: 0px 3px 0px rgb(0, 0, 0);
+}
+
+
+
+
+.content{
+    display: flex; /* Comoloca o display de conteudo como flex */
+    flex-direction: row; /* Altera a direção do flex para row no caso este é o padrão, linha por linha */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: center; /* Centraliza os conteudos dentro do flex */
+}
+
+.content img{
+    width: 400px;  /* Altera a largura */
+    height: 300px; /* Altera a altura */
+    object-fit: cover; /* "Esticou" a imagem pra ela cobrir toda a área, manter a proporção */
+    margin-right: 20px; /* Adicionou 20 pixels de margem a imagem */
+    border-radius: 8px; /* Arredondou as bordas das imagens */
+}
+
+.content .text{
+    max-width: 600px; /* Limutou como o maximo de largura cendo 600 pixels */
+    text-align: left; /* Alinhou os textos a esquerda */
+}
+
+.content .text h2{
+    font-size: 2em;
+    margin-bottom: 20px; /* Aumentou a margem*/
+    color: #333; /* Alterou a cor do (h2)*/
+}
+
+
+.content .text p {
+    font-size: 1.1em; /* Altera o tamanho da fonto do texto da "aba" de contato */
+    color: #555; /* Alterou a cor do (p)*/
+
+}
+
+.content .text ul{
+    font-size: 1.1em;
+    color: #555;
+}
+
+.marca{
+    font-family: Verdana, sans-serif;
+}
+
+#services{
+    background-color: #ffffff; /* Altera a cor do Service*/
+}
+
+#about{
+    background-color: #57b6c3; /* Altera a cor do Sobre nós */
+}
+
+#contact{
+    background-color: #ffffff; /* Altera a cor da aba de contatos */
+}
+
+#loc{
+    background-color: #57b6c3;
+}    
+
+.cta-button{
+    margin-top: 30px; /* Colocou uma margem de 30 pixels no topo do botão*/
+    background-color: #e6fb03; /* Mudou a cor de fundo */
+    color: #000000; /* mudou a cor do texto */
+    padding: 15px 30px; /* aumentou o padding vertical em 15 pixels e o horizontal em 30 */
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    border: none; /* Retirou a borda */
+    border-radius: 15px; /* Formata o botão a ter borda redonda */
+    cursor: pointer; /* Adicinou a indicação de interação do ponteiro */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, transform 1s ease ; /* ? */
+}
+
+.cta-button:hover{
+    background-color: rgb(0, 217, 255); 
+    transition: color 0.7s;
+} 
+
+.loc-button{
+    margin-top: 30px; /* Colocou uma margem de 30 pixels no topo do botão*/
+    background-color: #000000; /* Mudou a cor de fundo */
+    color: #ffffff; /* mudou a cor do texto */
+    padding: 15px 30px; /* aumentou o padding vertical em 15 pixels e o horizontal em 30 */
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    border: none; /* Retirou a borda */
+    border-radius: 15px; /* Formata o botão a ter borda redonda */
+    cursor: pointer; /* Adicinou a indicação de interação do ponteiro */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, transform 1s ease ; /* ? */
+}
+
+.loc-button:hover{
+    background-color: rgb(0, 217, 255); 
+    transition: color 0.7s;
+} 
